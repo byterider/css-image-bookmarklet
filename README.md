@@ -9,4 +9,4 @@ Limitations:
 - jQuery must be available
 
 
-30-Dec-2013 Cesar Keller
+30-Dec-2013 byterider
