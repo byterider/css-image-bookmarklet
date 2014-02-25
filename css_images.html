@@ -12,7 +12,7 @@ Note: jQuery must be available.
         // 2013 byterider
         $("body").html("<table/>");
         var count = 1, i = 0, j = 0, urls = [], url, sheet, rule, img, cell1, cell2, $table = $("table");
-        $table.css("font-size", "13px").css("background", "#999").css("color", "#eee");
+        $table.css({"font-size": "13px", "background": "#999", "color":"#eee"});
         while (sheet = document.styleSheets[i]) {
             if (window.console) console.log(sheet.href);
             while (sheet.cssRules && (rule = sheet.cssRules[j])) {
@@ -27,10 +27,7 @@ Note: jQuery must be available.
                             img = $("<img/>")
                                 .attr("src", url)
                                 .attr("title", url)
-                                .css("border", "1px dotted #333")
-                                .css("max-width", "80%")
-                                .css("display", "block")
-                                .css("margin", "5px");
+                                .css({"border": "1px dotted #333", "max-width": "80%", "display": "block", "margin": "5px"});
                             cell1 = $("<td/>").append(count);
                             cell2 = $("<td/>").append(img);
                             row = $("<tr/>").append(cell1).append(cell2);
